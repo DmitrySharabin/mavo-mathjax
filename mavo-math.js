@@ -24,6 +24,11 @@
 						);
 					}
 				}
+			},
+
+			"markdown-render-after": function (env) {
+				env.html = env.html.replace(/<\/?code>/g, "");
+				Mavo.Plugins.loaded.math.render(env.element, env.html);
 			}
 		},
 
