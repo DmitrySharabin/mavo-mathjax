@@ -26,7 +26,7 @@ The plugin supports TeX/LaTeX commands described [here](https://docs.mathjax.org
 </div>
 ```
 
-This plugin supports mathematics in Markdown. To use, include both the Math and the Markdown plugins, and give classes `mv-math` and `markdown` to the property you want to enable this functionality on, or specify a Markdown file as your data.
+This plugin supports mathematics in Markdown. To use, include both the [Math](https://plugins.mavo.io/plugin/math) and the [Markdown](https://plugins.mavo.io/plugin/markdown) plugins, and give classes `mv-math` and `markdown` to the property you want to enable this functionality on, or specify a Markdown file as your data.
 
 Mathematics must be marked as code fragments, i.e., enclosed by the backtick (\` \`) character.
 
