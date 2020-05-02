@@ -63,6 +63,7 @@
 		},
 		editor: function () {
 			const env = { context: this };
+
 			env.editor = $.create("textarea");
 			env.editor.style.whiteSpace = "pre-wrap";
 
@@ -71,6 +72,8 @@
 			if (width) {
 				env.editor.width = width;
 			}
+
+			Mavo.hooks.run("math-editor-create", env);
 
 			return env.editor;
 		},
