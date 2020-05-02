@@ -82,7 +82,7 @@
 			if (this.editor) {
 				this.editor.value = value;
 			} else {
-				Mavo.Plugins.loaded.math.render(this.element, value, this.mavo);
+				Mavo.Plugins.loaded.math.render(element, value, this.mavo);
 			}
 		},
 		// We don't need an observer and it actually causes problems as it tries to feed HTML changes back to MathJax
