@@ -36,7 +36,6 @@
 
 			// Handling Asynchronous Typesetting
 			// https://docs.mathjax.org/en/latest/options/index.html#configuring-mathjax
-			// https://docs.mathjax.org/en/latest/options/startup/startup.html#startup-options
 			mathjax.startup.promise = mathjax.startup.promise
 				.then(() => {
 					env.element.innerHTML = env.math;
