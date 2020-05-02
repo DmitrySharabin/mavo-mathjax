@@ -11,7 +11,7 @@
 	};
 
 	Mavo.Plugins.register("math", {
-		ready: $.include("https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-chtml.js"),
+		ready: $.include("https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-chtml.js"),
 
 		hooks: {
 			"init-start": function () {
