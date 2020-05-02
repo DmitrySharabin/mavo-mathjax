@@ -35,10 +35,6 @@
 		render: function (element, math, mavo, mathjax = self.MathJax) {
 			const env = { element, math };
 
-			// See https://github.com/mathjax/MathJax-demos-web/blob/master/input-tex_mml2chtml.html.md as an example
-			mathjax.texReset();
-			mathjax.typesetClear();
-
 			// Handling Asynchronous Typesetting
 			// https://docs.mathjax.org/en/latest/options/index.html#configuring-mathjax
 			mathjax.startup.promise = mathjax.startup.promise
