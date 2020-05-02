@@ -3,8 +3,15 @@
 
 	const SELECTOR = ".mv-math, [mv-math-options]";
 
+	// https://docs.mathjax.org/en/latest/options/startup/startup.html#startup-options
+	self.MathJax = {
+		startup: {
+			typeset: false // Don't perform initial typeset
+		}
+	};
+
 	Mavo.Plugins.register("math", {
-		ready: $.include(self.MathJax, "https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-chtml.js"),
+		ready: $.include("https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-chtml.js"),
 
 		hooks: {
 			"init-start": function () {
