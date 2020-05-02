@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Math tests</title>
+	<link rel="stylesheet" href="https://test.mavo.io/style.css" />
+	<link rel="stylesheet" href="https://dev.mavo.io/dist/mavo.css" />
+	<script src="https://dev.mavo.io/dist/mavo.js"></script>
+</head>
+
+<body>
+	<h1>Math tests</h1>
+
+	<section mv-app="math">
+		<h1>Basic</h1>
+
+		<table>
+			<tr>
+				<td>
+					<div class="mv-math" property="prop">$$\frac{a}{1-a^2}$$</div>
+				</td>
+			</tr>
+		</table>
+	</section>
+
+	<section mv-app="tex" mv-source="example.tex">
+		<h1>From file</h1>
+
+		<table>
+			<tr>
+				<td>
+					<div class="mv-math" property="prop"></div>
+				</td>
+				<td></td>
+			</tr>
+		</table>
+	</section>
+
+	<script src="mavo-math.js"></script>
+
+	<script src="https://test.mavo.io/test.js"></script>
+</body>
+
+</html>
