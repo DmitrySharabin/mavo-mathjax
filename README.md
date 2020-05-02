@@ -20,7 +20,7 @@ The plugin supports TeX/LaTeX commands described [here](https://docs.mathjax.org
 
 ```markup
 <div mv-app
-		 mv-source="https://dmitrysharabin.github.io/mavo-math/example.tex"
+     mv-source="https://dmitrysharabin.github.io/mavo-math/example.tex"
      mv-plugins="math">
 	<div property></div>
 </div>
