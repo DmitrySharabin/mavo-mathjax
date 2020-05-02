@@ -93,7 +93,7 @@
 		extends: Mavo.Formats.Base,
 		constructor: function (backend) {
 			this.property = this.mavo.root.getNames("Primitive")[0];
-			var primitive = this.mavo.root.children[this.property];
+			const primitive = this.mavo.root.children[this.property];
 			primitive.config = Mavo.Elements.math;
 		},
 
