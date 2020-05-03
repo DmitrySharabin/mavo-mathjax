@@ -27,7 +27,11 @@
 			},
 
 			"markdown-render-after": function (env) {
-				env.html = env.html.replace(/<\/?code>/g, "");
+				// Replace only those code blocks that look like math in the TeX/LaTeX format, i.e.,
+				// enclosed by the math delimiters: `$$...$$` and `\[...\]` for displayed mathematics,
+				// and`\(...\)` and `$...$` for inline mathematics
+				env.html = env.html
+					.replace(/<code>(?=(\\\(|\\\[|\${1,2}))(.*?)(?<=(\\\)|\\\]|\${1,2}))<\/code>/g, "$2");
 				Mavo.Plugins.loaded.math.render(env.element, env.html);
 			}
 		},
