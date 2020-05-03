@@ -41,7 +41,7 @@ Mathematics must be marked as code fragments, i.e., enclosed by the backtick (\`
 ```markup
 <div mv-app mv-storage="local"
      mv-plugins="math markdown">
-	<div property class="mv-math markdown>
+	<div property class="mv-math markdown">
 ## Markdown + Math
 
 Mavo is awesome. We can even combine **Markdown** with **Math**.
