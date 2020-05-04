@@ -31,7 +31,7 @@
 				// enclosed by the math delimiters: `$$...$$` and `\[...\]` for displayed mathematics,
 				// and`\(...\)` and `$...$` for inline mathematics
 				env.html = env.html
-					.replace(/<code>(?=(\\\(|\\\[|\${1,2}))(.*?)(?<=(\\\)|\\\]|\${1,2}))<\/code>/g, "$2");
+					.replace(/(<code>)(\\\(|\\\[|\${1,2})(.*?)(\\\)|\\\]|\${1,2})(<\/code>)/g, "$2$3$4");
 				Mavo.Plugins.loaded.math.render(env.element, env.html);
 			}
 		},
