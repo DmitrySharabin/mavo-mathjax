@@ -59,4 +59,16 @@ This plugin adds a [hook](https://mavo.io/docs/plugins/#hooks):
 | -------------------- | ---------------------------------------------------------------- |
 | `math-editor-create` | Allows you to modify the textarea for editing (via `env.editor`) |
 
+## Localization
+
+In case of an error, while typesetting math, the plugin writes a warning in English about that to the console. You can localize that warning message into a different language.
+
+Here is the `id` of the phrase to change/localize and its default value:
+
+| id                    | Default Value                     |
+| --------------------- | --------------------------------- |
+| `math-typeset-failed` | Typeset failed with error {error} |
+
+## Further explorations
+
 You can find more information about the features supported by the MathJax library in [the official docs](http://docs.mathjax.org/en/latest/index.html).
