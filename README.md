@@ -28,7 +28,7 @@ You can find the list of TeX/LaTeX commands supported by the plugin [here](https
 <div mv-app
      mv-source="https://dmitrysharabin.github.io/mavo-math/example.tex"
      mv-plugins="math">
-	<div property></div>
+	<div property mv-math-options="inline: $"></div>
 </div>
 ```
 
