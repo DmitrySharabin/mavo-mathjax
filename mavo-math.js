@@ -39,6 +39,21 @@
 		render: function (element, math, mavo, mathjax = self.MathJax) {
 			const env = { element, math };
 
+			if (env.element.mathOptions) {
+				const options = env.element.mathOptions;
+
+				if (options.inline && env.math) {
+					// Escape a user-specified delimiter because it might be a special character in a regular expression
+					const delimiter = `\\${options.inline}`;
+
+					// We want to find math between a user-defined delimiter but not between the doubled one
+					const exp = new RegExp(`${delimiter}(?!${delimiter})([^${delimiter}]+?)${delimiter}(?!${delimiter})`, "gm");
+
+					// Replace a user-specified delimiter with the built-in one
+					env.math = env.math.replace(exp, "\\($1\\)");
+				}
+			}
+
 			// Handling Asynchronous Typesetting
 			// https://docs.mathjax.org/en/latest/options/index.html#configuring-mathjax
 			mathjax.startup.promise = mathjax.startup.promise
@@ -62,8 +77,8 @@
 		init: function () {
 			const options = this.element.getAttribute("mv-math-options");
 
-			if (options && !this.fromTemplate("math")) {
-				// TODO: handle options
+			if (options) {
+				this.element.mathOptions = Mavo.options(options);
 			}
 		},
 		editor: function () {

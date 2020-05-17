@@ -6,7 +6,7 @@ To use, either give a class of `mv-math` to the property you want to enable Math
 
 To put mathematics in your app, you can use [TeX](https://en.wikipedia.org/wiki/TeX) and [LaTeX](https://en.wikipedia.org/wiki/LaTeX) notation. Mathematics is indicated using *math delimiters* that surround the mathematics, telling the plugin what part of your page represents mathematics and what is normal text. There are two types of equations: ones that occur within a paragraph (*in-line mathematics*), and larger equations that appear separated from the rest of the text on lines by themselves (*displayed mathematics*). The default math delimiters are `$$...$$` and `\[...\]` for displayed mathematics, and `\(...\)` for in-line mathematics.
 
-**Note:** The `$...$` in-line delimiters are not used by default. That is because dollar signs appear too often in non-mathematical expressions, which could cause some text to be treated as mathematics unexpectedly. If you want to use single dollar signs for in-line math mode, later, you'll be able to enable that mode explicitly via the `mv-math-options` attribute.
+**Note:** The `$...$` in-line delimiters are not used by default. That is because dollar signs appear too often in non-mathematical expressions, which could cause some text to be treated as mathematics unexpectedly. If you want to use single dollar signs for in-line math mode, you can enable that mode explicitly via the `mv-math-options` attribute, like so: `mv-math-options="inline: $"`. If you use this attribute, you can omit the `mv-math` class from your element, it's not needed.
 
 You can find the list of TeX/LaTeX commands supported by the plugin [here](https://docs.mathjax.org/en/latest/input/tex/macros/index.html#supported-tex-latex-commands).
 

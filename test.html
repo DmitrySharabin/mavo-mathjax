@@ -19,7 +19,13 @@
 		<table>
 			<tr>
 				<td>
-					<div class="mv-math" property="prop">$$\frac{a}{1-a^2}$$</div>
+					<div class="mv-math" property="prop1">$$\frac{a}{1-a^2}$$</div>
+				</td>
+			</tr>
+			<tr title="with options">
+				<td>
+					This is an inline-equation surrounded by the $ signs:
+					<div property="prop2" mv-math-options="inline: $">$\frac{a}{1-a^2}$</div>
 				</td>
 			</tr>
 		</table>
@@ -31,7 +37,7 @@
 		<table>
 			<tr>
 				<td>
-					<div property="prop"></div>
+					<div property="prop" mv-math-options="inline: $"></div>
 				</td>
 				<td></td>
 			</tr>
@@ -44,7 +50,7 @@
 		<table>
 			<tr>
 				<td>
-					<div property="prop"></div>
+					<div property="prop" mv-math-options="inline: $"></div>
 				</td>
 				<td></td>
 			</tr>
