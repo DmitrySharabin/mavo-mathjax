@@ -4,14 +4,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Math tests</title>
+	<title>MathJax tests</title>
 	<link rel="stylesheet" href="https://test.mavo.io/style.css" />
-	<link rel="stylesheet" href="https://dev.mavo.io/dist/mavo.css" />
-	<script src="https://dev.mavo.io/dist/mavo.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mavo/0.2.0/mavo.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mavo/0.2.0/mavo.js"></script>
 </head>
 
 <body>
-	<h1>Math tests</h1>
+	<h1>MathJax tests</h1>
 
 	<section mv-app="math">
 		<h1>Basic</h1>
@@ -19,13 +19,13 @@
 		<table>
 			<tr>
 				<td>
-					<div class="mv-math" property="prop1">$$\frac{a}{1-a^2}$$</div>
+					<div class="mv-mathjax" property="prop1">$$\frac{a}{1-a^2}$$</div>
 				</td>
 			</tr>
 			<tr title="with options">
 				<td>
 					This is an inline-equation surrounded by the $ signs:
-					<div property="prop2" mv-math-options="inline: $">$\frac{a}{1-a^2}$</div>
+					<div property="prop2" mv-mathjax-options="inline: $">$\frac{a}{1-a^2}$</div>
 				</td>
 			</tr>
 		</table>
@@ -37,7 +37,7 @@
 		<table>
 			<tr>
 				<td>
-					<div property="prop" mv-math-options="inline: $"></div>
+					<div property="prop" mv-mathjax-options="inline: $"></div>
 				</td>
 				<td></td>
 			</tr>
@@ -50,14 +50,14 @@
 		<table>
 			<tr>
 				<td>
-					<div property="prop" mv-math-options="inline: $"></div>
+					<div property="prop" mv-mathjax-options="inline: $"></div>
 				</td>
 				<td></td>
 			</tr>
 		</table>
 	</section>
 
-	<script src="mavo-math.js"></script>
+	<script src="mavo-mathjax.js"></script>
 
 	<script src="https://test.mavo.io/test.js"></script>
 </body>
