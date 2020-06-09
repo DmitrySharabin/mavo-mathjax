@@ -107,7 +107,9 @@
 		},
 		done: function () {
 			// Has it actually been edited?
-			this.preEdit && this.preEdit.then(() => Mavo.Plugins.loaded.mathjax.render(this.element, this.value, this.mavo));
+			if (this.preEdit || this.editor && this.editor.closest("html")) {
+				(this.preEdit || Promise.resolve()).then(() => Mavo.Plugins.loaded.mathjax.render(this.element, this.value, this.mavo));
+			}
 		},
 		setValue: function (element, value) {
 			if (this.editor) {
