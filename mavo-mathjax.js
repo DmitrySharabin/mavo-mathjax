@@ -1,3 +1,11 @@
+// @ts-check
+
+/**
+ * MathJax plugin for Mavo. Beautiful math in Mavo apps in all browsers
+ * @author Dmitry Sharabin and contributors
+ * @version %%VERSION%%
+ */
+
 (function ($, $$) {
 	"use strict";
 
