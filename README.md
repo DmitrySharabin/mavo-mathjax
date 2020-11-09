@@ -32,7 +32,7 @@ You can find the list of TeX/LaTeX commands supported by the plugin [here](https
 </div>
 ```
 
-This plugin supports mathematics in Markdown. To use, include both the [MathJax](https://plugins.mavo.io/plugin/mathjax) and the [Markdown](https://plugins.mavo.io/plugin/markdown) plugins, and give classes `mv-mathjax` and `markdown` to the property you want to enable this functionality on, or specify a Markdown file as your data.
+This plugin supports mathematics in Markdown. To use, include both the [MathJax](https://plugins.mavo.io/plugin/mathjax) and the [Markdown](https://plugins.mavo.io/plugin/markdown) plugins, and add the `markdown` class to the property you want to enable this functionality on, or specify a Markdown file as your data.
 
 Mathematics must be marked as code fragments, i.e., enclosed by the backtick (\` \`) character.
 
@@ -41,7 +41,7 @@ Mathematics must be marked as code fragments, i.e., enclosed by the backtick (\`
 ```markup
 <div mv-app mv-storage="local"
      mv-plugins="mathjax markdown">
-	<div property="md" class="mv-mathjax markdown">
+	<div property="md" class="markdown">
 ## Markdown + Math
 
 Mavo is awesome. We can even combine **Markdown** with **MathJax**.
