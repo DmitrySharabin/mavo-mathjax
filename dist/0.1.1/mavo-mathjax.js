@@ -3,7 +3,7 @@
 /**
  * MathJax plugin for Mavo. Beautiful math in Mavo apps in all browsers
  * @author Dmitry Sharabin and contributors
- * @version %%VERSION%%
+ * @version 0.1.1
  */
 
 (function ($, $$) {
